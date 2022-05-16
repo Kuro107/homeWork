@@ -23,6 +23,8 @@ public class Main2 {
         computer.setKeyboard(keyboard);
 
         System.out.println(computer);
+
+
         }
 
     }
