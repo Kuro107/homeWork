@@ -1,3 +1,5 @@
+package HW2_3;
+
 import java.util.Arrays;
 
 public class Computer {
@@ -144,19 +146,19 @@ public class Computer {
     @Override
 public String toString(){
         return "This computer have: " + "\n" +
-                "Model: " + model + "\n" +
-                "Display: " + display + "\n" +
-                "Color: " + color + " \n" +
-                "SSD: " + ssd + "\n" +
-                "Main memory: " + ssd + "\n" +
-                "GPU: " + gpu + "\n" +
+                "HW2_3.Model: " + model + "\n" +
+                "HW2_3.Display: " + display + "\n" +
+                "HW2_3.Color: " + color + " \n" +
+                "HW2_3.SSD: " + ssd + "\n" +
+                "Hw2_2.Main memory: " + ssd + "\n" +
+                "HW2_3.GPU: " + gpu + "\n" +
                 "USB port: " + usbPort + "\n" +
-                "Keyboard" + keyboard + "\n" +
+                "HW2_3.Keyboard" + keyboard + "\n" +
                 "Letters: " + keyEng + "\n" +
                 "Full name: " + fullName + "\n" +
-                "Login: " + login + "\n" +
-                "Age = " + age + "\n" +
-                "Password: " + password + "\n" +
+                "HW2_3.Login: " + login + "\n" +
+                "HW2_3.Age = " + age + "\n" +
+                "HW2_3.Password: " + password + "\n" +
                 "Is the account blocked" + unlocked;
     }
 }
@@ -444,7 +446,7 @@ class KeyEng{
         @Override
         public String toString(){
             return
-                    "Login: " + login;
+                    "HW2_3.Login: " + login;
         }
     }
     class Age{
@@ -467,7 +469,7 @@ class KeyEng{
         @Override
         public String toString(){
             return
-                    "Age = " + age;
+                    "HW2_3.Age = " + age;
         }
     }
     class Password{
@@ -487,7 +489,7 @@ class KeyEng{
         @Override
         public String toString(){
             return
-                    "Password: " + password;
+                    "HW2_3.Password: " + password;
         }
     }
     class Unlocked{

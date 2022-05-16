@@ -1,3 +1,5 @@
+package Hw2_2;
+
 public class Pets {
     Parrot parrots;
     Dog dogs;
@@ -41,7 +43,7 @@ public class Pets {
         return "parrots = " + parrots + "\n" +
                 "Dogs = " + dogs + "\n" +
                 "Cats = " + cats + "\n" +
-                "Fishes = " + fishes;
+                "Hw2_2.Fishes = " + fishes;
     }
 }
         class Parrot {

@@ -1,4 +1,6 @@
-import static jdk.internal.org.jline.utils.Colors.s;
+package HW2_3;
+
+import HW2_3.*;
 
 public class Main2 {
     public static void main(String[] args) {
@@ -23,6 +25,8 @@ public class Main2 {
         computer.setKeyboard(keyboard);
 
         System.out.println(computer);
+
+
         }
 
     }

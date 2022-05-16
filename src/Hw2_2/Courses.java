@@ -1,3 +1,5 @@
+package Hw2_2;
+
 public class Courses {
    private String name;
    private String date;

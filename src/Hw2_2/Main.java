@@ -1,3 +1,7 @@
+package Hw2_2;
+
+import Hw2_2.*;
+
 public class Main {
     public static void main(String[] args) {
         Pets pets = new Pets();
