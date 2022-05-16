@@ -10,6 +10,11 @@ public class Computer {
     USBPort usbPort;
     Keyboard keyboard;
     KeyEng keyEng;
+    FullName fullName;
+    Login login;
+    Age age;
+    Password password;
+    Unlocked unlocked;
 
     public  Computer(){}
 
@@ -77,6 +82,54 @@ public class Computer {
         this.keyboard = keyboard;
     }
 
+    public KeyEng getKeyEng() {
+        return keyEng;
+    }
+
+    public void setKeyEng(KeyEng keyEng) {
+        this.keyEng = keyEng;
+    }
+
+    public FullName getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(FullName fullName) {
+        this.fullName = fullName;
+    }
+
+    public Login getLogin() {
+        return login;
+    }
+
+    public void setLogin(Login login) {
+        this.login = login;
+    }
+
+    public Age getAge() {
+        return age;
+    }
+
+    public void setAge(Age age) {
+        this.age = age;
+    }
+
+    public Password getPassword() {
+        return password;
+    }
+
+    public void setPassword(Password password) {
+        this.password = password;
+    }
+
+    public Unlocked getUnlocked() {
+        return unlocked;
+    }
+
+    public void setUnlocked(Unlocked unlocked) {
+        this.unlocked = unlocked;
+    }
+
     public Computer(Display display, Model model, Color color, SSD ssd, Ram ram, GPU gpu, USBPort usbPort, Keyboard keyboard) {
         this.display = display;
         this.model = model;
@@ -99,7 +152,12 @@ public String toString(){
                 "GPU: " + gpu + "\n" +
                 "USB port: " + usbPort + "\n" +
                 "Keyboard" + keyboard + "\n" +
-                "Letters: " + keyEng;
+                "Letters: " + keyEng + "\n" +
+                "Full name: " + fullName + "\n" +
+                "Login: " + login + "\n" +
+                "Age = " + age + "\n" +
+                "Password: " + password + "\n" +
+                "Is the account blocked" + unlocked;
     }
 }
 class Display{
@@ -325,3 +383,131 @@ class KeyEng{
     }
 
 }
+    class FullName{
+    String firstName;
+    String name;
+    String lastName;
+
+        public FullName(String firstName, String name, String lastName) {
+            this.firstName = firstName;
+            this.name = name;
+            this.lastName = lastName;
+        }
+
+        public String getFirstName() {
+            return firstName;
+        }
+
+        public void setFirstName(String firstName) {
+            this.firstName = firstName;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getLastName() {
+            return lastName;
+        }
+
+        public void setLastName(String lastName) {
+            this.lastName = lastName;
+        }
+        @Override
+        public String toString(){
+            return
+                    "First name: " + firstName + "\n" +
+                    "Name: " + name + "\n" +
+                     "Last name" + lastName;
+
+        }
+    }
+    class Login{
+    String login;
+
+
+        public Login(String login) {
+            this.login = login;
+        }
+
+        public String getLogin() {
+            return login;
+        }
+
+        public void setLogin(String login) {
+            this.login = login;
+        }
+        @Override
+        public String toString(){
+            return
+                    "Login: " + login;
+        }
+    }
+    class Age{
+    byte age;
+
+        public Age(byte age) {
+            this.age = age;
+        }
+
+        public byte getAge() {
+            return age;
+        }
+
+        public void setAge(byte age) {
+            boolean zero = true;
+            this.age = age;
+            if (age <= 0)
+                zero = false;
+        }
+        @Override
+        public String toString(){
+            return
+                    "Age = " + age;
+        }
+    }
+    class Password{
+    String password;
+
+        public Password(String password) {
+            this.password = password;
+        }
+
+        public String getPassword() {
+            return password;
+        }
+
+        public void setPassword(String password) {
+            this.password = password;
+        }
+        @Override
+        public String toString(){
+            return
+                    "Password: " + password;
+        }
+    }
+    class Unlocked{
+    boolean unlocked;
+
+        public Unlocked(boolean unlocked) {
+            this.unlocked = unlocked;
+        }
+
+        public boolean isUnlocked() {
+            return unlocked;
+        }
+
+        public void setUnlocked(boolean unlocked) {
+            this.unlocked = unlocked;
+        }
+        @Override
+        public String toString(){
+            return
+                    "Your logins is locked " + unlocked;
+        }
+    }
+
