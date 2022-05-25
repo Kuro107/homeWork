@@ -3,13 +3,36 @@ package HW2_5;
 import java.util.Scanner;
 
 public class Main {
-	
-	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		
-		
-		System.out.println("Введите 1 если хотите ввести круг или введите что-то(именно число) если хотите квадрат");
+
+		Scanner sc = new Scanner(System.in);
+//	Task A
+		SUV hummer = new SUV();
+		hummer.name = "HUMMER";
+		hummer.carBodyType = "SUV";
+		hummer.driveUnit = "4WD";
+		hummer.engineType = "Electrical engine";
+		System.out.println(hummer + "\n");
+
+		SpecialEquipment excavator = new SpecialEquipment();
+		excavator.name = "Excavator Daewoo";
+		excavator.carBodyType = "Cabin";
+		excavator.occupation = "Dig";
+		excavator.haveWheels = false;
+		excavator.engineType = "Internal combustion engine";
+		System.out.println(excavator + "\n");
+
+		Supercar mclaren = new Supercar();
+		mclaren.name = "Mclaren f1231";
+		mclaren.carBodyType = "sport car";
+		mclaren.engineType = "Internal combustion engine";
+		mclaren.engineHP = 1200;
+		mclaren.maxSpeed = 480;
+		System.out.println(mclaren + "\n");
+
+//Task B
+		System.out.println("Введите любое число для получения квадрата или введите 1 для получения круга");
 		int a = sc.nextInt();
 		 
 		if (a == 1) {

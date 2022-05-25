@@ -1,8 +1,6 @@
-package HW2_3;
+package HW2_3__2_4;
 
-import HW2_3.*;
-
-public class Main2 {
+public class Main {
     public static void main(String[] args) {
         Computer computer = new Computer();
 
